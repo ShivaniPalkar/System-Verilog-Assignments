@@ -1,0 +1,237 @@
+coverage save -onexit coveragereport.ucdb
+# 0
+vcover report -verbose coveragereport.ucdb
+# QuestaSim-64 vcover 2021.2 Coverage Utility 2021.04 Apr 14 2021
+# Start time: 18:24:38 on Mar 12,2022
+# vcover report -verbose coveragereport.ucdb 
+# Coverage Report by instance with details
+# 
+# =================================================================================
+# === Instance: /top
+# === Design Unit: work.top
+# =================================================================================
+# 
+# Assertion Coverage:
+#     Assertions                       1         1         0   100.00%
+# --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Name                 Assertion   Design     Design     Lang File(Line)                Enable    Failure      Pass  FPSA   Failure Pass    Failure EOS  Formal       Formal
+#                      Type        Unit       UnitType                                            Count        Count Action Log     Log     Limit   Note Status       Radius
+# --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# /top/#ublk#31584#67/#anonblk#31584#75#4#/#ublk#31584#80/immed__81
+#                      Immediate   top        Verilog    SVA  addsubtbcoverage.sv(81)     on            0          1 CCCC   -       -     unlimited off                     
+# 
+# Covergroup Coverage:
+#     Covergroups                      1        na        na   100.00%
+#         Coverpoints/Crosses          9        na        na        na
+#             Covergroup Bins          9         9         0   100.00%
+# ----------------------------------------------------------------------------------------------------------
+# Covergroup                                             Metric       Goal       Bins    Status               
+#                                                                                                          
+# ----------------------------------------------------------------------------------------------------------
+#  TYPE /top/conditioncodes                             100.00%        100          -    Covered              
+#     covered/total bins:                                     9          9          -                      
+#     missing/total bins:                                     0          9          -                      
+#     % Hit:                                            100.00%        100          -                      
+#     Coverpoint negative                               100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#     Coverpoint zero                                   100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#     Coverpoint overflow                               100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#     Coverpoint carry                                  100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#     Coverpoint SUBinput                               100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#     Cross subCCN                                      100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#     Cross subCCZ                                      100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#     Cross subCCV                                      100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#     Cross subCCC                                      100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#  Covergroup instance \/top/#ublk#31584#67/cc          100.00%        100          -    Covered              
+#     covered/total bins:                                     9          9          -                      
+#     missing/total bins:                                     0          9          -                      
+#     % Hit:                                            100.00%        100          -                      
+#     Coverpoint negative                               100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin bin1Zero                                       50          1          -    Covered              
+#     Coverpoint zero                                   100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin bin2                                           50          1          -    Covered              
+#     Coverpoint overflow                               100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin bin3                                           50          1          -    Covered              
+#     Coverpoint carry                                  100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin bin4                                           50          1          -    Covered              
+#     Coverpoint SUBinput                               100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin bin5                                           50          1          -    Covered              
+#     Cross subCCN                                      100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         Auto, Default and User Defined Bins:
+#             bin <bin1Zero,bin5>                            50          1          -    Covered              
+#     Cross subCCZ                                      100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         Auto, Default and User Defined Bins:
+#             bin <bin2,bin5>                                50          1          -    Covered              
+#     Cross subCCV                                      100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         Auto, Default and User Defined Bins:
+#             bin <bin3,bin5>                                50          1          -    Covered              
+#     Cross subCCC                                      100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         Auto, Default and User Defined Bins:
+#             bin <bin4,bin5>                                50          1          -    Covered              
+# 
+# COVERGROUP COVERAGE:
+# ----------------------------------------------------------------------------------------------------------
+# Covergroup                                             Metric       Goal       Bins    Status               
+#                                                                                                          
+# ----------------------------------------------------------------------------------------------------------
+#  TYPE /top/conditioncodes                             100.00%        100          -    Covered              
+#     covered/total bins:                                     9          9          -                      
+#     missing/total bins:                                     0          9          -                      
+#     % Hit:                                            100.00%        100          -                      
+#     Coverpoint negative                               100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#     Coverpoint zero                                   100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#     Coverpoint overflow                               100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#     Coverpoint carry                                  100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#     Coverpoint SUBinput                               100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#     Cross subCCN                                      100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#     Cross subCCZ                                      100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#     Cross subCCV                                      100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#     Cross subCCC                                      100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#  Covergroup instance \/top/#ublk#31584#67/cc          100.00%        100          -    Covered              
+#     covered/total bins:                                     9          9          -                      
+#     missing/total bins:                                     0          9          -                      
+#     % Hit:                                            100.00%        100          -                      
+#     Coverpoint negative                               100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin bin1Zero                                       50          1          -    Covered              
+#     Coverpoint zero                                   100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin bin2                                           50          1          -    Covered              
+#     Coverpoint overflow                               100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin bin3                                           50          1          -    Covered              
+#     Coverpoint carry                                  100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin bin4                                           50          1          -    Covered              
+#     Coverpoint SUBinput                               100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         bin bin5                                           50          1          -    Covered              
+#     Cross subCCN                                      100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         Auto, Default and User Defined Bins:
+#             bin <bin1Zero,bin5>                            50          1          -    Covered              
+#     Cross subCCZ                                      100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         Auto, Default and User Defined Bins:
+#             bin <bin2,bin5>                                50          1          -    Covered              
+#     Cross subCCV                                      100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         Auto, Default and User Defined Bins:
+#             bin <bin3,bin5>                                50          1          -    Covered              
+#     Cross subCCC                                      100.00%        100          -    Covered              
+#         covered/total bins:                                 1          1          -                      
+#         missing/total bins:                                 0          1          -                      
+#         % Hit:                                        100.00%        100          -                      
+#         Auto, Default and User Defined Bins:
+#             bin <bin4,bin5>                                50          1          -    Covered              
+# 
+# TOTAL COVERGROUP COVERAGE: 100.00%  COVERGROUP TYPES: 1
+# 
+# ASSERTION RESULTS:
+# --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Name                 Assertion   Design     Design     Lang File(Line)                Enable    Failure      Pass  FPSA   Failure Pass    Failure EOS  Formal       Formal
+#                      Type        Unit       UnitType                                            Count        Count Action Log     Log     Limit   Note Status       Radius
+# --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# /top/#ublk#31584#67/#anonblk#31584#75#4#/#ublk#31584#80/immed__81
+#                      Immediate   top        Verilog    SVA  addsubtbcoverage.sv(81)     on            0          1 CCCC   -       -     unlimited off                     
+# 
+# Total Coverage By Instance (filtered view): 100.00%
+# 
+# End time: 18:24:38 on Mar 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

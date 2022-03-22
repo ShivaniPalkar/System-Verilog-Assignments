@@ -1,0 +1,14 @@
+Question 1: What's the potential problem with using bit in the sample function header? How
+can we still use it but address that issue?
+
+Ans: The problem with using bit in the sample funtion is that if either of the variables in the portlist is an output port, 
+     the Xs and Zs; if ever encountered will silently be converted into 0s.
+     Using isunknown() function on the outputs declared will make sure no unknown values are accepted.
+
+
+Question 2: Why can't you just treat the four condition codes as a single value using
+            concatenation (e.g. {C,N,Z,V}) and build a coverpoint for it along with cross coverage with
+            sub? This question has to do with the specific design and not SystemVerilog.  
+
+Ans: A concatenation of the C,V,N,Z codes and building a coverpoint for it along with cross coverage with sub cannot be done as these flags will never be true (1)
+     all together and hence the coverage will not hit all the bins even if numerous test cases are generated.  
